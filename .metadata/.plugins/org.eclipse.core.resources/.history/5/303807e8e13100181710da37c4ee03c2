@@ -1,9 +1,0 @@
-import javax.swing.JPanel;
-
-public class PaintPanel extends JPanel{
-
-	public PaintPanel() {
-		this.setBackground(Color.BLACK);
-	}
-	
-}

@@ -1,8 +1,0 @@
-
-public class Window extends JFrame{
-
-	public Window() {
-		super(800,600);
-	}
-	
-}
