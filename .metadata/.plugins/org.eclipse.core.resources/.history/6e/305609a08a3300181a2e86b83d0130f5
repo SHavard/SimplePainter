@@ -1,0 +1,27 @@
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+public class Brush extends MouseAdapter {
+	
+	public void mouseDragged(MouseEvent e) {
+		if (e.getButton() == MouseEvent.BUTTON1) {
+			
+		}
+	}
+	
+	public void mousePressed(MouseEvent e) {
+		switch (e.getButton()) {
+		case MouseEvent.BUTTON1:
+			//create new segment
+			//add current mouse position to segment
+			break;
+		case MouseEvent.BUTTON3:
+			//clear background
+			break;
+		default: 
+			//do nothing
+			break;
+		}
+	}
+	
+}

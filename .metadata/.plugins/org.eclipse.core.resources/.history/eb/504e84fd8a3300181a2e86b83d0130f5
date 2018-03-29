@@ -1,0 +1,43 @@
+import java.awt.Color;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+import javax.swing.JPanel;
+
+public class PaintPanel extends JPanel{
+
+	public PaintPanel() {
+		this.setBackground(Color.BLACK);
+		this.addMouseListener(new Brush());
+	}
+	
+	
+	
+	private class Brush extends MouseAdapter {
+		
+		public void mouseDragged(MouseEvent e) {
+			if (e.getButton() == MouseEvent.BUTTON1) {
+				//get most recent segment
+				//add mouse position to segment
+			}
+		}
+		
+		public void mousePressed(MouseEvent e) {
+			switch (e.getButton()) {
+			case MouseEvent.BUTTON1:
+				//create new segment
+				//add current mouse position to segment
+				break;
+			case MouseEvent.BUTTON3:
+				//clear background
+				break;
+			default: 
+				//do nothing
+				break;
+			}
+		}
+		
+	}
+
+	
+}

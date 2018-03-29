@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Segment {
+	private ArrayList<Point> points;
+	
+	public Segment() {
+		points = new ArrayList<Point>();
+	}
+	
+	public Segment(Point p) {
+		points = new ArrayList<Point>();
+		points.add(p);
+	}
+	
+	public void addPoint(Point p) {
+		points.add(p); 
+	}
+	
+	public void addPoints(List<Point> ps) {
+		
+	}
+
+}

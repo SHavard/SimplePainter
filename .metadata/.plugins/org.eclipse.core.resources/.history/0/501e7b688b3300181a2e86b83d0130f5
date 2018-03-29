@@ -1,0 +1,9 @@
+
+public class Segment {
+	private ArrayList<Point> points;
+	
+	public Segment() {
+		points = new ArrayList<Point>();
+	}
+
+}

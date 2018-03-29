@@ -1,0 +1,16 @@
+import javax.swing.JFrame;
+
+public class Window extends JFrame{
+
+	public Window() {
+		super("Painter");
+		this.setSize(800, 600);
+		this.setVisible(true);
+		this.setContentPane(new PaintPanel());
+	}
+	
+	
+	public static void main(String[] args) {
+		new Window();
+	}
+}
